@@ -1,0 +1,17 @@
+# require 'net/http'
+
+# example = Net::HTTP.get('example.com', '/index.html')
+
+# File.open('example.html', 'w') do |line|
+#     line.puts(example)
+# end
+
+# --------------------------------------------------------------
+
+require 'net/http'
+
+example = Net::HTTP.get('www.google.com', '/')
+
+File.open('google.html', 'w') do |line|
+    line.puts(example)
+end
